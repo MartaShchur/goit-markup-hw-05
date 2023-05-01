@@ -599,3 +599,18 @@ ul {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+card-link {
+    position: relative;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+
+.overlay p {
+    color: #F4F4FD;
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
