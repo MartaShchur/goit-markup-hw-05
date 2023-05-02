@@ -411,11 +411,18 @@
       </div>
     </footer>
 
-    <div class="modal-container is-hidden">
-      <data-modal></data-modal>
+     <!-- Modal Page-->
+    <div  class="modal-container is-hidden">
+      <data-modal>
+      
       <div modal-page>
-        <button data-modal-close type="button"></button>
+        <button class="btn-modal-page" data-modal-close type="button" 
+        < svg  width="8" height="8" class="modal">
+                  <use href="./images/modal.svg#icon-vector"></use>
+        </svg>
+        ></button>
       </div>
+      </data-modal>
     </div>
 
     <script src="./js/modal.js"></script>
