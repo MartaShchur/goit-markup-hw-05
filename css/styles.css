@@ -155,8 +155,6 @@ p{
     background-color: #404bbf;   
 }
 
-
-
 /**
   |============================
   | CONTACTS
@@ -339,6 +337,8 @@ p{
     padding-bottom: 32px; 
 }
 
+/* Social Media */
+
 .traling-icons{ 
     display: flex;
     justify-content: center;
@@ -480,6 +480,8 @@ p{
     color: var(--footer-text-color);
     max-width: 264px;
 }
+
+/* Social Media */
 
 .social-text{
     font-weight: 500;
@@ -625,47 +627,17 @@ body{
     padding-top: 96px;
     padding-bottom: 120px;
 }
-.card-set{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;  
-}
-
-.project-card{
-    width: calc((100% - 48px)/3);
-    transition: box-shadow 250ms 
-    cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 ul {
     padding-left: 0;
     margin: 0;
 }
 
-.content{
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-}
-
-.gallery-title{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--main-text-color);
-    margin-bottom: 8px;
-}
-
-.gallery-text{
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--secondary-text-color);
-}
-
 .list{
     list-style: none;
 }
+
+/* Button */
 
 .btn-set{
     display: flex;
@@ -707,8 +679,24 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+
+/* gallery */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.project-card {
+    width: calc((100% - 48px)/3);
+}
+
 .card-link{
     display: block; 
+    transition: box-shadow 250ms
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-link:hover,
@@ -718,20 +706,37 @@ ul {
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-a:hover,
-a:focus{
-    transform: translateY(0%);  
+.content {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
-.card-container{
-    position:relative;
+.gallery-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+}
+
+.gallery-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--secondary-text-color);
+}
+
+/* Overlay */
+
+.overlay{
+    position: relative;
     overflow: hidden;
-
 }
 
-.img-text{
+.overlay-text{
     position: absolute;
     top: 0;
+    left: 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -740,9 +745,16 @@ a:focus{
     background-color: #4d5ae5;
     height: 100%;
     width: 100%;
+
     transform: translateY(100%);
-    transition: transform 250ms
+    transition: transform 250ms 
     cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.overlay-text:hover,
+.overlay-text:focus {
+    transform: translateY(0%);
+}
+
 
 
