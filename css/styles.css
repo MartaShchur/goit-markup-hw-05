@@ -128,8 +128,8 @@ p{
     color: var(--main-text-color);
     position: relative;
     transition:color 250ms 
-    cubic-bezier(0.4, 0, 0.2, 1)
-
+    cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .menu-item:focus,
@@ -137,7 +137,7 @@ p{
     color:#404BBF;
 }
 
-.submenu::after{
+.active::after{
     content: "";
     position: absolute;
     left: 0;
@@ -145,15 +145,11 @@ p{
     height: 4px;
     border-radius: 2px;
     width: 100%; 
-    /* background-color: #404bbf; */
+    background-color: #404bbf; 
 }
 
 .submenu.active{
-    color: var(--color-hover);
-}
-
-.submenu.active::after{
-    background-color: #404bbf;   
+    color:#404bbf;
 }
 
 /**
@@ -631,6 +627,10 @@ ul {
 
 .list{
     list-style: none;
+}
+
+.menu-page{
+    color: #404bbf;
 }
 
 /* Button */
